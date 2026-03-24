@@ -24,6 +24,7 @@
     document.querySelector("#similar").innerHTML = "";
     document.querySelector(".background-img").style.backgroundImage = `url(./assets/2.png)`;
     document.querySelector(".backdrop").classList.add("backdrop-hidden");
+    return;
   }
 
   const response = await fetch(`https://restcountries.com/v3.1/alpha/${id}?fields=name,capital,currencies,flags,cca3,borders,region,subregion,population`);// Fetch country data by code //id theo field
